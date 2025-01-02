@@ -65,7 +65,7 @@ jobs:
         uses: Azure/functions-action@v1
         id: deploy-to-function
         with:
-          app-name: 'exchange-rate-py'
+          app-name: 'CcyConvertTrigger'
           slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_79F1C8A711504C48B4F1D7F55F21A8F3 }}
