@@ -1,3 +1,6 @@
+# Convert From One Currency To Another For Free
+GET API Format: https://ccyconverttrigger.azurewebsites.net/api/ccyconverttrigger?from_ccy={3 letter from currency code}&to_ccy={3 letter to currency code}&amount={amount to be converted}
+
 # How to deploy manually
 1. func azure functionapp publish CcyConvertTrigger
 1. curl -X GET -H 'x-functions-key:<API-KEY-HERE>' https://ccyconverttrigger.azurewebsites.net/api/ccyconverttrigger\?from_ccy=JPY\&to_ccy=GBP\&amount=63
