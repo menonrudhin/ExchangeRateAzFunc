@@ -1,4 +1,4 @@
-# Convert From One Currency To Another For Free
+# Exchange Currencies Without Any Fees
 GET API Format: https://ccyconverttrigger.azurewebsites.net/api/ccyconverttrigger?from_ccy={3 letter from currency code}&to_ccy={3 letter to currency code}&amount={amount to be converted}
 
 API key to be used in the header: 'x-functions-key:RD_RNS7Kf7fiKMbP4sysWeQnjxOgE3uMYuOnMQ-aTo47AzFumfU9Sg=='
