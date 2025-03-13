@@ -19,9 +19,13 @@ def CcyConvertTrigger(req: func.HttpRequest) -> func.HttpResponse:
     AMOUNT=req.params.get('amount')
 
     if FROM_CCY and TO_CCY and AMOUNT:
-        result = urllib.request.urlopen(f'https://www.google.com/search?q={AMOUNT}+{FROM_CCY}+to+{TO_CCY}&oq={AMOUNT}+{FROM_CCY}+to+{TO_CCY}');
-        raw_text = str(result.read());
+        result = urllib.request.urlopen(f'https://www.google.com/search?q={AMOUNT}+{FROM_CCY}+to+{TO_CCY}');
+        print("****", result.getcode())
+        raw_text = str(result.read())
+        print("****", result.getcode())
+        print("*** result is ",raw_text)
         matches = re.finditer(pattern, raw_text)
+        ret_val = "No match found"
         for match in matches:
             start = match.start()
             end = raw_text.index('<',start)
