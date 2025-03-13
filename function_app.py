@@ -8,7 +8,7 @@ import re
 app = func.FunctionApp()
 pattern = r'class="BNeawe iBp4i AP7Wnd">[0-9,]+.?[0-9]* [a-zA-Z ]+<\/div>'
 
-@app.route(route="CcyConvertTrigger", auth_level=func.AuthLevel.FUNCTION)
+@app.route(route="ccy-convert", auth_level=func.AuthLevel.FUNCTION)
 def CcyConvertTrigger(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python HTTP trigger function processed a request.')
 
