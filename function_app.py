@@ -8,6 +8,8 @@ import re
 app = func.FunctionApp()
 pattern = r'class="BNeawe iBp4i AP7Wnd">[0-9,]+.?[0-9]* [a-zA-Z ]+<\/div>'
 
+# route is the name of the function-app
+# create API key to access this function-app
 @app.route(route="ccy-convert", auth_level=func.AuthLevel.FUNCTION)
 def CcyConvertTrigger(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python HTTP trigger function processed a request.')
